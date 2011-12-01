@@ -22,6 +22,7 @@
 		8DE57DA71487D6590034C7E2 /* Hobie@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA01487D6590034C7E2 /* Hobie@2x.jpg */; };
 		8DE57DA81487D6590034C7E2 /* Ice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA11487D6590034C7E2 /* Ice.jpg */; };
 		8DE57DA91487D6590034C7E2 /* Ice@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA21487D6590034C7E2 /* Ice@2x.jpg */; };
+		8DE57DB11487DB370034C7E2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57DB01487DB370034C7E2 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		8DE57DA01487D6590034C7E2 /* Hobie@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hobie@2x.jpg"; sourceTree = "<group>"; };
 		8DE57DA11487D6590034C7E2 /* Ice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ice.jpg; sourceTree = "<group>"; };
 		8DE57DA21487D6590034C7E2 /* Ice@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ice@2x.jpg"; sourceTree = "<group>"; };
+		8DE57DAF1487DB360034C7E2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8DE57DB01487DB370034C7E2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				8DE57D801487C9AA0034C7E2 /* AppDelegate.m */,
 				8DE57D8F1487CA9F0034C7E2 /* PetsViewController.h */,
 				8DE57D901487CAA00034C7E2 /* PetsViewController.m */,
+				8DE57DAF1487DB360034C7E2 /* DetailViewController.h */,
+				8DE57DB01487DB370034C7E2 /* DetailViewController.m */,
 				8DE57D8B1487CA430034C7E2 /* Pet.h */,
 				8DE57D8C1487CA430034C7E2 /* Pet.m */,
 			);
@@ -218,6 +223,7 @@
 				8DE57DA31487D6590034C7E2 /* UIImage+Alpha.m in Sources */,
 				8DE57DA41487D6590034C7E2 /* UIImage+Resize.m in Sources */,
 				8DE57DA51487D6590034C7E2 /* UIImage+RoundedCorner.m in Sources */,
+				8DE57DB11487DB370034C7E2 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

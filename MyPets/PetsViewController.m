@@ -7,6 +7,7 @@
 //
 
 #import "PetsViewController.h"
+#import "DetailViewController.h"
 #import "Pet.h"
 
 
@@ -43,16 +44,11 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  DetailViewController *detailViewController = [[DetailViewController alloc] init];
+  detailViewController.pet = [self.pets objectAtIndex: indexPath.row];
+  [self.navigationController pushViewController:detailViewController animated:YES];
+  [detailViewController release];
 }
 
 @end
