@@ -35,6 +35,7 @@
 
   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: petsViewController];
   self.window.rootViewController = navController;
+
   [self.window makeKeyAndVisible];
 
   [navController release];
