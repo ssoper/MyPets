@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  PetsViewController.h
 //  MyPets
 //
 //  Created by Sean Soper on 12/1/11.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface PetsViewController : UITableViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) NSArray *pets;
 
 @end

@@ -13,6 +13,8 @@
 		8DE57D7B1487C9AA0034C7E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57D791487C9AA0034C7E2 /* InfoPlist.strings */; };
 		8DE57D7D1487C9AA0034C7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D7C1487C9AA0034C7E2 /* main.m */; };
 		8DE57D811487C9AA0034C7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D801487C9AA0034C7E2 /* AppDelegate.m */; };
+		8DE57D8D1487CA430034C7E2 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D8C1487CA430034C7E2 /* Pet.m */; };
+		8DE57D911487CAA00034C7E2 /* PetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D901487CAA00034C7E2 /* PetsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		8DE57D7E1487C9AA0034C7E2 /* MyPets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPets-Prefix.pch"; sourceTree = "<group>"; };
 		8DE57D7F1487C9AA0034C7E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DE57D801487C9AA0034C7E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DE57D8B1487CA430034C7E2 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		8DE57D8C1487CA430034C7E2 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		8DE57D8F1487CA9F0034C7E2 /* PetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetsViewController.h; sourceTree = "<group>"; };
+		8DE57D901487CAA00034C7E2 /* PetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE57D761487C9AA0034C7E2 /* MyPets */,
+				8DE57D771487C9AA0034C7E2 /* Supporting Files */,
 				8DE57D6F1487C9AA0034C7E2 /* Frameworks */,
 				8DE57D6D1487C9AA0034C7E2 /* Products */,
 			);
@@ -74,7 +81,10 @@
 			children = (
 				8DE57D7F1487C9AA0034C7E2 /* AppDelegate.h */,
 				8DE57D801487C9AA0034C7E2 /* AppDelegate.m */,
-				8DE57D771487C9AA0034C7E2 /* Supporting Files */,
+				8DE57D8F1487CA9F0034C7E2 /* PetsViewController.h */,
+				8DE57D901487CAA00034C7E2 /* PetsViewController.m */,
+				8DE57D8B1487CA430034C7E2 /* Pet.h */,
+				8DE57D8C1487CA430034C7E2 /* Pet.m */,
 			);
 			path = MyPets;
 			sourceTree = "<group>";
@@ -88,6 +98,7 @@
 				8DE57D7E1487C9AA0034C7E2 /* MyPets-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = MyPets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,8 @@
 			files = (
 				8DE57D7D1487C9AA0034C7E2 /* main.m in Sources */,
 				8DE57D811487C9AA0034C7E2 /* AppDelegate.m in Sources */,
+				8DE57D8D1487CA430034C7E2 /* Pet.m in Sources */,
+				8DE57D911487CAA00034C7E2 /* PetsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +267,7 @@
 				8DE57D861487C9AA0034C7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
