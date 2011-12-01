@@ -13,8 +13,59 @@
 
 @implementation PetsViewController
 
-@synthesize pets;
+@synthesize pets = _pets;
 
+
+#pragma mark - Private
+
+- (void) closeModal {
+  [self.navigationController dismissModalViewControllerAnimated: YES];
+}
+
+- (void) configurePets {
+  __block PetsViewController *this = self;
+  
+  Pet *cat = [[Pet alloc] init];
+  cat.name = @"Ice";
+  cat.species = @"cat";
+
+  cat.onSelectPet = ^(id pet) {
+    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    detailViewController.pet = (Pet *)pet;
+    [this.navigationController presentModalViewController:detailViewController animated: YES];
+    [this performSelector: @selector(closeModal) withObject: nil afterDelay: 2];
+    [detailViewController release];
+  };
+
+  Pet *dog = [[Pet alloc] init];
+  dog.name = @"Hobie";
+  dog.species = @"dog";
+
+  dog.onSelectPet = ^(id pet) {
+    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    detailViewController.pet = (Pet *)pet;
+    [this.navigationController pushViewController: detailViewController animated: YES];
+    [detailViewController release];
+  };
+
+  NSArray *pets = [[NSArray alloc] initWithObjects: cat, dog, nil];
+  self.pets = pets;
+
+  [pets release];
+  [dog release];
+  [cat release];
+}
+
+
+#pragma mark - Initialization
+
+- (id) init {
+  if (self = [super init]) {
+    [self configurePets];
+  }
+
+  return self;
+}
 
 #pragma mark - Table view data source
 
@@ -45,10 +96,8 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  DetailViewController *detailViewController = [[DetailViewController alloc] init];
-  detailViewController.pet = [self.pets objectAtIndex: indexPath.row];
-  [self.navigationController pushViewController:detailViewController animated:YES];
-  [detailViewController release];
+  Pet *pet = [self.pets objectAtIndex: indexPath.row];
+  [pet fireHandler];
 }
 
 @end

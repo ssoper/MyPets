@@ -12,7 +12,7 @@
 
 @implementation Pet
 
-@synthesize name = _name, species, image, thumbnail;
+@synthesize name = _name, species, image, thumbnail, onSelectPet;
 
 - (BOOL) deviceSize:(CGFloat) size {
   CGFloat newSize = size;
@@ -34,8 +34,17 @@
   _name = [name retain];
 
   NSString *path = [[NSBundle mainBundle] pathForResource: _name ofType: @"jpg"];
-  self.image = [[UIImage alloc] initWithContentsOfFile: path];
+  UIImage *newImage = [[UIImage alloc] initWithContentsOfFile: path];
+  self.image = newImage;
+  [newImage release];
+
   self.thumbnail = [self.image thumbnailImage: [self deviceSize: 50]transparentBorder: YES cornerRadius: 5 interpolationQuality: kCGInterpolationDefault];
+}
+
+- (void) fireHandler {
+  if (self.onSelectPet) {
+    self.onSelectPet(self);
+  }
 }
 
 - (void) dealloc {
