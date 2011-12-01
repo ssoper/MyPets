@@ -15,6 +15,13 @@
 		8DE57D811487C9AA0034C7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D801487C9AA0034C7E2 /* AppDelegate.m */; };
 		8DE57D8D1487CA430034C7E2 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D8C1487CA430034C7E2 /* Pet.m */; };
 		8DE57D911487CAA00034C7E2 /* PetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D901487CAA00034C7E2 /* PetsViewController.m */; };
+		8DE57DA31487D6590034C7E2 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D991487D6590034C7E2 /* UIImage+Alpha.m */; };
+		8DE57DA41487D6590034C7E2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D9B1487D6590034C7E2 /* UIImage+Resize.m */; };
+		8DE57DA51487D6590034C7E2 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE57D9D1487D6590034C7E2 /* UIImage+RoundedCorner.m */; };
+		8DE57DA61487D6590034C7E2 /* Hobie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57D9F1487D6590034C7E2 /* Hobie.jpg */; };
+		8DE57DA71487D6590034C7E2 /* Hobie@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA01487D6590034C7E2 /* Hobie@2x.jpg */; };
+		8DE57DA81487D6590034C7E2 /* Ice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA11487D6590034C7E2 /* Ice.jpg */; };
+		8DE57DA91487D6590034C7E2 /* Ice@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DE57DA21487D6590034C7E2 /* Ice@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,16 @@
 		8DE57D8C1487CA430034C7E2 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
 		8DE57D8F1487CA9F0034C7E2 /* PetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetsViewController.h; sourceTree = "<group>"; };
 		8DE57D901487CAA00034C7E2 /* PetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetsViewController.m; sourceTree = "<group>"; };
+		8DE57D981487D6590034C7E2 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		8DE57D991487D6590034C7E2 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		8DE57D9A1487D6590034C7E2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		8DE57D9B1487D6590034C7E2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		8DE57D9C1487D6590034C7E2 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		8DE57D9D1487D6590034C7E2 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		8DE57D9F1487D6590034C7E2 /* Hobie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hobie.jpg; sourceTree = "<group>"; };
+		8DE57DA01487D6590034C7E2 /* Hobie@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hobie@2x.jpg"; sourceTree = "<group>"; };
+		8DE57DA11487D6590034C7E2 /* Ice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ice.jpg; sourceTree = "<group>"; };
+		8DE57DA21487D6590034C7E2 /* Ice@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ice@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE57D761487C9AA0034C7E2 /* MyPets */,
+				8DE57D971487D6590034C7E2 /* Dependencies */,
+				8DE57D9E1487D6590034C7E2 /* Resources */,
 				8DE57D771487C9AA0034C7E2 /* Supporting Files */,
 				8DE57D6F1487C9AA0034C7E2 /* Frameworks */,
 				8DE57D6D1487C9AA0034C7E2 /* Products */,
@@ -99,6 +118,32 @@
 			);
 			name = "Supporting Files";
 			path = MyPets;
+			sourceTree = "<group>";
+		};
+		8DE57D971487D6590034C7E2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				8DE57D981487D6590034C7E2 /* UIImage+Alpha.h */,
+				8DE57D991487D6590034C7E2 /* UIImage+Alpha.m */,
+				8DE57D9A1487D6590034C7E2 /* UIImage+Resize.h */,
+				8DE57D9B1487D6590034C7E2 /* UIImage+Resize.m */,
+				8DE57D9C1487D6590034C7E2 /* UIImage+RoundedCorner.h */,
+				8DE57D9D1487D6590034C7E2 /* UIImage+RoundedCorner.m */,
+			);
+			name = Dependencies;
+			path = MyPets/Dependencies;
+			sourceTree = "<group>";
+		};
+		8DE57D9E1487D6590034C7E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DE57D9F1487D6590034C7E2 /* Hobie.jpg */,
+				8DE57DA01487D6590034C7E2 /* Hobie@2x.jpg */,
+				8DE57DA11487D6590034C7E2 /* Ice.jpg */,
+				8DE57DA21487D6590034C7E2 /* Ice@2x.jpg */,
+			);
+			name = Resources;
+			path = MyPets/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE57D7B1487C9AA0034C7E2 /* InfoPlist.strings in Resources */,
+				8DE57DA61487D6590034C7E2 /* Hobie.jpg in Resources */,
+				8DE57DA71487D6590034C7E2 /* Hobie@2x.jpg in Resources */,
+				8DE57DA81487D6590034C7E2 /* Ice.jpg in Resources */,
+				8DE57DA91487D6590034C7E2 /* Ice@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +215,9 @@
 				8DE57D811487C9AA0034C7E2 /* AppDelegate.m in Sources */,
 				8DE57D8D1487CA430034C7E2 /* Pet.m in Sources */,
 				8DE57D911487CAA00034C7E2 /* PetsViewController.m in Sources */,
+				8DE57DA31487D6590034C7E2 /* UIImage+Alpha.m in Sources */,
+				8DE57DA41487D6590034C7E2 /* UIImage+Resize.m in Sources */,
+				8DE57DA51487D6590034C7E2 /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

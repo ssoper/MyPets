@@ -11,5 +11,6 @@
 @interface Pet : NSObject
 
 @property (nonatomic, retain) NSString *name, *species;
+@property (nonatomic, retain) UIImage *image, *thumbnail;
 
 @end

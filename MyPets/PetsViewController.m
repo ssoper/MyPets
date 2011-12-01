@@ -15,19 +15,6 @@
 @synthesize pets;
 
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -48,6 +35,7 @@
 
   Pet *pet = [self.pets objectAtIndex: indexPath.row];
   cell.textLabel.text = [NSString stringWithFormat: @"%@ is a %@", pet.name, pet.species];
+  cell.imageView.image = pet.thumbnail;
 
   return cell;
 }
